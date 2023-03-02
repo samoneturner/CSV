@@ -14,7 +14,7 @@ for index, column_header in enumerate(header_row):
 highs = []
 
 for row in csvfile:
-    highs.append(row[5])
+    highs.append(int(row[5]))
 
 print(highs)
 
@@ -27,4 +27,10 @@ plt.xlabel("", fontsize=16)
 plt.ylabel("Temperature(F)", fontsize=16)
 plt.tick_params(axis="both", which="major", labelsize=16)
 
-plt.show()
+plt.show() 
+
+plt.subplot(2,1,1) 
+plt.plot(dates,highs,c='red')
+plt.title('Highs')
+
+plt.plot(dates, lows, c='red')

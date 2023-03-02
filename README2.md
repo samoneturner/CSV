@@ -1,0 +1,1 @@
+The purpose of this project us to create 2 subplot graphs in one visualization so you can compare Sitka, Alaska and Death Valley highs and lows at the same time. 
