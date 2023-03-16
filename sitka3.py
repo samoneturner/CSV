@@ -8,6 +8,7 @@ from datetime import datetime
 
 infile = open("sitka_weather_2018_simple.csv", "r")
 
+
 csvfile = csv.reader(infile)
 
 header_row = next(csvfile)
